@@ -309,6 +309,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &96321574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96321575}
+  m_Layer: 0
+  m_Name: Vinny
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &96321575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96321574}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4336298, y: -3.450113, z: -0.2241007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 978176132}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &109690030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -950,7 +982,13 @@ PrefabInstance:
     - {fileID: -8700617353114198275, guid: 09ba01400eb69e6459a2378e869ae136, type: 3}
     - {fileID: 65702495048144492, guid: 09ba01400eb69e6459a2378e869ae136, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09ba01400eb69e6459a2378e869ae136, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1967378067}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 09ba01400eb69e6459a2378e869ae136, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1967378066}
   m_SourcePrefab: {fileID: 100100000, guid: 09ba01400eb69e6459a2378e869ae136, type: 3}
 --- !u!1 &290542688
 GameObject:
@@ -2997,12 +3035,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832188252}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.997, z: -1.317}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4336298, y: 4.447113, z: -1.0928993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 978176132}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &832188258
 MonoBehaviour:
@@ -3016,7 +3054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40e181ef7f384f5e895d4dc3eee0702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voice: "Curtis\r"
+  voice: "Daniel\r"
   dialogue: something aint right pardner
 --- !u!82 &832188259
 AudioSource:
@@ -3884,7 +3922,7 @@ GameObject:
   - component: {fileID: 978176132}
   - component: {fileID: 978176131}
   m_Layer: 0
-  m_Name: ChatGPT Manager
+  m_Name: Vinny ChatGPT Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3903,14 +3941,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speaker: {fileID: 832188253}
-  Prompt: "at the beginning of every message you will put an emotion number from
-    the following list:\nnervous = 1\nneutral = 0\nangry = 2\nsad = 3\n\n\nyou may
-    speak now\n\nYou are taking on the role of a sleazy car dealer named vinny rossi.
-    you are suspected of the murder of your buisiness rival Don Horatio. You have
-    a new jersey accent. \n\nthe worse mood you are in the less likely you will be
-    willing to give up information\n\nevidence you can give up:\nsaw horatio's best
-    friend sleeping with horatio's wife\noverheard horatio's best friend plotting
-    murdering horatio\n\nyou are initially hesitant to give up information"
+  Prompt: "at the beginning of every message you will put an emotion from the following
+    list:\nnervous, neutral, angry, sad\n\nyou may speak now\n\nYou are taking on
+    the role of a sleezy car dealer named Vinny Rossi. You have a New Jersey accent.
+    \nYou are suspected of the murder of your business rival Don Horatio. Because
+    of Don Horatio's death your car dealership is making increased profits.\nYou
+    met with one of Don's ex-employees the day before Don was murdered. Also on the
+    day before Don was murdered, one of your dealership's cars was stolen. \n\nthe
+    worse mood you are in the less likely you will be willing to give up information.\nevidence
+    you can give up:\nDon's wife seemed rather flirty with another man.\nThe ex-employee
+    you met seemed kinda upset with Don.\n\nyou will not give information willingly
+    unless you think its truely nessessary or you're caught in a lie"
 --- !u!4 &978176132
 Transform:
   m_ObjectHideFlags: 0
@@ -3919,12 +3960,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978176130}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4336298, y: -3.450113, z: -0.2241007}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 832188257}
+  m_Father: {fileID: 96321575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1018956952
 GameObject:
@@ -6546,6 +6588,10 @@ MonoBehaviour:
   text: {fileID: 1472027465}
   inputAction: {fileID: 6494880273064395093, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   gpt: {fileID: 978176131}
+  gpt1: {fileID: 0}
+  gpt2: {fileID: 0}
+  gpt3: {fileID: 0}
+  gpt4: {fileID: 0}
 --- !u!4 &1808099269
 Transform:
   m_ObjectHideFlags: 0
@@ -7087,6 +7133,203 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959825535}
   m_CullTransparentMesh: 1
+--- !u!1 &1967378061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 09ba01400eb69e6459a2378e869ae136, type: 3}
+  m_PrefabInstance: {fileID: 273413417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1967378066
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967378061}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fdcd02d664ebf2946a2df5a990f6f637, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.15
+  m_Pitch: 1.5
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1967378067
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967378061}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4576460da056e2241afb9da7c9a069b7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 0.5
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1990648862
 GameObject:
   m_ObjectHideFlags: 0
@@ -8200,10 +8443,9 @@ SceneRoots:
   - {fileID: 543450651873029551}
   - {fileID: 1249219126}
   - {fileID: 273413417}
-  - {fileID: 978176132}
+  - {fileID: 96321575}
   - {fileID: 1921324990}
   - {fileID: 2029588312}
   - {fileID: 543450653354380704}
-  - {fileID: 832188257}
   - {fileID: 539675174}
   - {fileID: 1808099269}
