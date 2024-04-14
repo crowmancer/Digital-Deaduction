@@ -15,8 +15,9 @@ public class SpeechRecognitionTest : MonoBehaviour
     private bool recording;
     private bool xDown;
     // OpenXR Input Actions
-    public InputHelpers.Button button;
     public InputActionReference inputAction;
+    public ChatGPTManager gpt;
+    public clipTester tester;
 
     private void Start()
     {
@@ -31,27 +32,26 @@ public class SpeechRecognitionTest : MonoBehaviour
         {
             if (!xDown) {
                 xDown=true;
-                
             }
             else {
                 xDown=false;
-                Debug.Log("not gripping");
+            }
+            if (xDown && !recording)
+            {
+                StartRecording();
+            }
+            else if (!xDown && recording)
+            {
+                StopRecording();
+            }
+
+            if (recording && Microphone.GetPosition(null) >= clip.samples)
+            {
+                StopRecording();
             }
         }
 
-        if (xDown && !recording)
-        {
-            StartRecording();
-        }
-        else if (!xDown && recording)
-        {
-            StopRecording();
-        }
-
-        if (recording && Microphone.GetPosition(null) >= clip.samples)
-        {
-            StopRecording();
-        }
+        
     }
 
     private void StartRecording()
@@ -70,6 +70,7 @@ public class SpeechRecognitionTest : MonoBehaviour
         clip.GetData(samples, 0);
         bytes = EncodeAsWAV(samples, clip.frequency, clip.channels);
         recording = false;
+        tester.clipTest(clip);
         SendRecording();
     }
 
@@ -80,6 +81,7 @@ public class SpeechRecognitionTest : MonoBehaviour
         HuggingFaceAPI.AutomaticSpeechRecognition(bytes, response => {
             text.color = Color.white;
             text.text = response;
+            gpt.AskChatGPT(response);
         }, error => {
             text.color = Color.red;
             text.text = error;
