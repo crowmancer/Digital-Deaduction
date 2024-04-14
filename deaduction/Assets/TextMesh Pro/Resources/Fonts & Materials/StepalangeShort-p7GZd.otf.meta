@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 56f3e4559794ce544bc8b86a3efdc703
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Stepalange
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: be63f861ba1b34a4eaa85577e69ef17b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 2
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
