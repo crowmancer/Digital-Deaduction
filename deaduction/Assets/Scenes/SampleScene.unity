@@ -3016,7 +3016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40e181ef7f384f5e895d4dc3eee0702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voice: "Curtis\r"
+  voice: Szymon
   dialogue: something aint right pardner
 --- !u!82 &832188259
 AudioSource:
@@ -5089,7 +5089,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -6546,6 +6546,10 @@ MonoBehaviour:
   text: {fileID: 1472027465}
   inputAction: {fileID: 6494880273064395093, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   gpt: {fileID: 978176131}
+  gpt1: {fileID: 0}
+  gpt2: {fileID: 0}
+  gpt3: {fileID: 0}
+  gpt4: {fileID: 0}
 --- !u!4 &1808099269
 Transform:
   m_ObjectHideFlags: 0
