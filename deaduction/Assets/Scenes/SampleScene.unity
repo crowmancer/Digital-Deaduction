@@ -180,6 +180,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6449396190361501714, guid: fca58d51239f244479f44964b8476aa6, type: 3}
+      propertyPath: Prompt
+      value: "\rYou are taking on the role of a housewife named Emma Horatio.You
+        are suspected of the murder of your husband, Don Horatio. Because of Don
+        Horatio's death you stand to gain all of his money. You were estranged from
+        Don for a week before his death. You do not seem affected by Don's death,
+        because you are having a secret affair with his best friend, Liam Donivan.
+        \r\n\r\nAdditionally you know that Liam is most likely the one that killed
+        Don, but will never tell a soul. If prompted you will say he was out in Atlantic
+        city for a trip on the day of Don's murder.\r\n\r\nYou may also pin the murder
+        on one of Don's ex-employees, Tyler Hanson, who was quite mad at Don after
+        he was fired through email and wasn't given his severance."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449396190361501714, guid: fca58d51239f244479f44964b8476aa6, type: 3}
       propertyPath: speaker
       value: 
       objectReference: {fileID: 618748163}
@@ -1574,7 +1587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81231309863235509, guid: 9b8c72555a8d71649b5f3ae04b14ee9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.756
+      value: -0.372
       objectReference: {fileID: 0}
     - target: {fileID: 81231309863235509, guid: 9b8c72555a8d71649b5f3ae04b14ee9c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1615,6 +1628,36 @@ PrefabInstance:
     - target: {fileID: 750772784710939919, guid: 9b8c72555a8d71649b5f3ae04b14ee9c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211161849460311719, guid: 9b8c72555a8d71649b5f3ae04b14ee9c, type: 3}
+      propertyPath: Prompt
+      value: 'You are taking on the role of a mentally unstable man named Tyler Hanson.
+        You are suspected of the murder of your ex-boss, Don Horatio, because he
+        fired you two weeks prior via email, and you were not given severance pay.
+        You were fired because of your aggressive sales tactics.  You had a very
+        angry email exchange with Don after you were fired. You thought very highly
+        of Don.
+
+        You own a gun, but only for self protection.
+
+
+
+        The
+        worse mood you are in the less likely you will be willing to give up information.
+
+        evidence
+        you can give up:
+
+        Don''s wife seemed uninterested in him romantically.
+
+        You
+        had met with Don''s rival, Vinny, to see if you could get a job, the day
+        before Don''s murder.
+
+
+
+        You want to help as much with the investigation
+        as possible.'
       objectReference: {fileID: 0}
     - target: {fileID: 2211161849460311719, guid: 9b8c72555a8d71649b5f3ae04b14ee9c, type: 3}
       propertyPath: speaker
@@ -2317,12 +2360,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2949984699511450299, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949984699511450299, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949984699511450299, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949984699511450299, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.087
       objectReference: {fileID: 0}
     - target: {fileID: 2949984699511450299, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.735
+      value: -0.456
       objectReference: {fileID: 0}
     - target: {fileID: 2949984699511450299, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2355,6 +2410,19 @@ PrefabInstance:
     - target: {fileID: 2949984699511450299, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575099708572468169, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
+      propertyPath: Prompt
+      value: "You are taking on the role of a sleezy car dealer named Vinny Rossi.
+        You have a New Jersey accent. \r\nYou are suspected of the murder of your
+        business rival Don Horatio. Because of Don Horatio's death your car dealership
+        is making increased profits.\r\nYou met with one of Don's ex-employees the
+        day before Don was murdered. Also on the day before Don was murdered, one
+        of your dealership's cars was stolen. \r\n\r\nthe worse mood you are in the
+        less likely you will be willing to give up information.\r\nevidence you can
+        give up:\r\nDon's wife seemed rather flirty with another man.\r\nThe ex-employee
+        you met seemed kinda upset with Don.\r\n\r\nyou will not give information
+        willingly unless you think its truely nessessary or you're caught in a lie."
       objectReference: {fileID: 0}
     - target: {fileID: 6575099708572468169, guid: 64386c1c15d9ec847b18e343eac2d976, type: 3}
       propertyPath: speaker
@@ -5026,7 +5094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7478112485801062578, guid: 72299131d9fc9c949b281af633ce9e2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.545
+      value: -0.369
       objectReference: {fileID: 0}
     - target: {fileID: 7478112485801062578, guid: 72299131d9fc9c949b281af633ce9e2a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5067,6 +5135,20 @@ PrefabInstance:
     - target: {fileID: 7821704735209400840, guid: 72299131d9fc9c949b281af633ce9e2a, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651000455957274935, guid: 72299131d9fc9c949b281af633ce9e2a, type: 3}
+      propertyPath: Prompt
+      value: "You are taking on the role of a regular man named Liam Donivan. You
+        are suspected of the murder of your best-friend, Don Horatio. However, you
+        did kill Don Horatio to continue with your affair with his wife, Emma. If
+        prompted you will say you were in Jersey City for a trip with your brother
+        on the day that Don was murdered. You are very obsessive about Emma. \r\n\r\nThis
+        information you won't give at all and will try to spin and mislead the investigator
+        if they get close to it:\r\n1. You stole a car from Don's rival, Vinny, and
+        used it to kidnap Don and bring him to a secluded area where you murdered
+        him with a knife. \r\n2. You tried to get rid of the stolen car, but it was
+        hard to hide.\r\n3. The day before Don's murder you scoped out Vinny's dealership
+        for the easiest car to steal."
       objectReference: {fileID: 0}
     - target: {fileID: 8651000455957274935, guid: 72299131d9fc9c949b281af633ce9e2a, type: 3}
       propertyPath: speaker
@@ -6109,16 +6191,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472027463}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -24.3}
+  m_LocalRotation: {x: 0.2332313, y: -0.7330183, z: 0.6088949, w: -0.19373782}
+  m_LocalPosition: {x: 0, y: 0, z: -98.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 734615744}
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 90}
+  m_LocalEulerAnglesHint: {x: 126.651, y: -72.10501, z: 104.524}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.6, y: -118.1}
+  m_AnchoredPosition: {x: 50.9, y: -181.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472027465
@@ -6141,7 +6223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Waiting For
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7632,7 +7714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1808099268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8691,7 +8773,7 @@ Transform:
   m_GameObject: {fileID: 919132149511341690}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 1.39, z: 0.062}
+  m_LocalPosition: {x: -0.04, y: 1.75, z: 0.062}
   m_LocalScale: {x: 0.48855832, y: 0.48855832, z: 0.48855832}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8884,8 +8966,8 @@ Transform:
   m_GameObject: {fileID: 832149485896857632}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0.003371, z: 0}
-  m_LocalScale: {x: -3.0976284, y: -4.29972, z: -1.6607503}
+  m_LocalPosition: {x: 0, y: 0.005343, z: 0}
+  m_LocalScale: {x: -3.0976284, y: -4.29972, z: -1.8579284}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450651873029551}
@@ -9292,7 +9374,7 @@ Transform:
   m_GameObject: {fileID: 4888768948585090006}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0.003371, z: 0}
+  m_LocalPosition: {x: 0, y: 0.007, z: 0}
   m_LocalScale: {x: -3.0976284, y: -4.29972, z: -1.6607503}
   m_ConstrainProportionsScale: 0
   m_Children: []
