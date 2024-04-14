@@ -2,27 +2,39 @@ using System.IO;
 using HuggingFace.API;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class SpeechRecognitionTest : MonoBehaviour
 {
-    [SerializeField] private Button startButton;
-    [SerializeField] private Button stopButton;
     [SerializeField] private TextMeshProUGUI text;
 
     private AudioClip clip;
     private byte[] bytes;
     private bool recording;
 
+    // OpenXR Input Actions
+    private InputDevice device;
+    private bool xButtonPressed;
+
     private void Start()
     {
-        startButton.onClick.AddListener(StartRecording);
-        stopButton.onClick.AddListener(StopRecording);
-        stopButton.interactable = false;
+        // Find the right hand controller
+        device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
     }
 
     private void Update()
     {
+        device.TryGetFeatureValue(CommonUsages.primaryButton, out xButtonPressed);
+
+        if (xButtonPressed && !recording)
+        {
+            StartRecording();
+        }
+        else if (!xButtonPressed && recording)
+        {
+            StopRecording();
+        }
+
         if (recording && Microphone.GetPosition(null) >= clip.samples)
         {
             StopRecording();
@@ -33,8 +45,6 @@ public class SpeechRecognitionTest : MonoBehaviour
     {
         text.color = Color.white;
         text.text = "Recording...";
-        startButton.interactable = false;
-        stopButton.interactable = true;
         clip = Microphone.Start(null, false, 10, 44100);
         recording = true;
     }
@@ -54,17 +64,15 @@ public class SpeechRecognitionTest : MonoBehaviour
     {
         text.color = Color.yellow;
         text.text = "Sending...";
-        stopButton.interactable = false;
         HuggingFaceAPI.AutomaticSpeechRecognition(bytes, response => {
             text.color = Color.white;
             text.text = response;
-            startButton.interactable = true;
         }, error => {
             text.color = Color.red;
             text.text = error;
-            startButton.interactable = true;
         });
     }
+
 
     private byte[] EncodeAsWAV(float[] samples, int frequency, int channels)
     {
