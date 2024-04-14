@@ -7,7 +7,7 @@ public class ChatGPTManager : MonoBehaviour
 {
     private OpenAIApi openAI = new OpenAIApi();
     private List<ChatMessage> messages = new List<ChatMessage>();
-
+    public teststart speaker;
 
     public async void AskChatGPT(string newText)
     {
@@ -28,6 +28,7 @@ public class ChatGPTManager : MonoBehaviour
             var chatResponse = response.Choices[0].Message;
             messages.Add(chatResponse);
 
+            speaker.BeginSpeaking(chatResponse.Content);
             Debug.Log(chatResponse.Content);
         }
 
