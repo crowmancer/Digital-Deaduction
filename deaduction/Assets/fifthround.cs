@@ -15,18 +15,9 @@ public class fifthround : MonoBehaviour
     public void startfifth()
     {
         set1.SetActive(false);
-        set4.SetActive(false);
+        set4.SetActive(true);
         set2.SetActive(false);
         set3.SetActive(false);
 
-        set5.SetActive(true);
-    }
-
-    public void doChar(int num)
-    {
-        speechR.SetGPT(num);
-        clock.startClock();
-        set5.SetActive(false);
-        set4.SetActive(true);
     }
 }

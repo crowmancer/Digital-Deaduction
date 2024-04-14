@@ -16,12 +16,18 @@ public class bellRing : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("this thing goes gong but trigger");
-        bell.Play();
+        
 
-        if (!delay)
+        if (!delay && !(characterNum >= 5))
         {
+            bell.Play();
             clock.startClock();
             StartCoroutine(d_delay());
+        }
+        else if(characterNum >= 5)
+        {
+            StartCoroutine(d_delay());
+            bell.Play();
         }
         
     }
@@ -29,7 +35,7 @@ public class bellRing : MonoBehaviour
     IEnumerator d_delay()
     {
         delay = true;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         delay = false;
     }
 
@@ -56,11 +62,14 @@ public class bellRing : MonoBehaviour
     {
         if(characterNum + 1 >= 5){
             fifthround.startfifth();
+            clock.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
         else
         {
             characterNum++;
+            speechR.SetGPT(characterNum);
         }
-        speechR.SetGPT(characterNum);
+        
     }
 }
