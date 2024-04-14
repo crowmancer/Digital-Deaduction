@@ -335,111 +335,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &179944636
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 179944641}
-  - component: {fileID: 179944640}
-  - component: {fileID: 179944639}
-  - component: {fileID: 179944638}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &179944638
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179944636}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &179944639
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179944636}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &179944640
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179944636}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &179944641
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179944636}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6, y: 0.94263494, z: 0.412}
-  m_LocalScale: {x: 0.16, y: 0.16, z: 0.16}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &198008998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,7 +1485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &536264700
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3033,7 +2928,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Liam Donavan
+  m_text: Liam Donivan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ca7aadeea4544d46bffff31b01d6204, type: 2}
   m_sharedMaterial: {fileID: 1447635454094479208, guid: 2ca7aadeea4544d46bffff31b01d6204, type: 2}
@@ -3450,7 +3345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tyler Hansen
+  m_text: Tyler Hanson
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ca7aadeea4544d46bffff31b01d6204, type: 2}
   m_sharedMaterial: {fileID: 1447635454094479208, guid: 2ca7aadeea4544d46bffff31b01d6204, type: 2}
@@ -4481,7 +4376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tyler Hansen:'
+  m_text: 'Tyler Hanson:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ca7aadeea4544d46bffff31b01d6204, type: 2}
   m_sharedMaterial: {fileID: 1447635454094479208, guid: 2ca7aadeea4544d46bffff31b01d6204, type: 2}
@@ -5761,7 +5656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1724850161
 Transform:
   m_ObjectHideFlags: 0
@@ -5986,7 +5881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Liam Donovan:
+  m_text: 'Liam Donivan:
 
 '
   m_isRightToLeft: 0
@@ -6868,7 +6763,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Victim: Don Horatio, Car Dealer\n\nSuspects:\nVinny Rossi -- Rival Car
-    Dealer\nEmma Horatio -- Wife\nTyler Hanan -- Ex-employee\nLiam Donivan -- Best
+    Dealer\nEmma Horatio -- Wife\nTyler Hanson -- Ex-employee\nLiam Donivan -- Best
     Friend\n\nMurder Scene: \nBody was found in the woods with a bag over their head,
     possibly kidnapped, with multiple stab wounds, nearby was a car that was reported
     stolen by Vinny Ross."
@@ -7841,4 +7736,3 @@ SceneRoots:
   - {fileID: 2029588312}
   - {fileID: 543450653354380704}
   - {fileID: 539675174}
-  - {fileID: 179944641}
