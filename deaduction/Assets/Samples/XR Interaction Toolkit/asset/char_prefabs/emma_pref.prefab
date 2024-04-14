@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1605085439494241243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6231165
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.5152054
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      propertyPath: m_Name
+      value: emma_pref
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5562904707842095446}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6449396190361501714}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1665580017505418561}
+  m_SourcePrefab: {fileID: 100100000, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+--- !u!1 &1911498087717242506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0494e0fab159c1b4e8c7191605bf06d5, type: 3}
+  m_PrefabInstance: {fileID: 1605085439494241243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5562904707842095446
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911498087717242506}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d4141ddf04916324aa46c2e61759724f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6449396190361501714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911498087717242506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d41143ae0ee47488bd2b03b3d9d750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speaker: {fileID: 0}
+  Prompt: "at the beginning of every message you will put an emotion from the following
+    list:\r\nnervous, neutral, angry, sad\r\n\r\nyou may speak now\r\n\r\nYou are
+    taking on the role of a housewife named Emma Horatio.You are suspected of the
+    murder of your husband, Don Horatio. Because of Don Horatio's death you stand
+    to gain all of his money. You were estranged from Don for a week before his death.
+    You do not seem affected by Don's death, because you are having a secret affair
+    with his best friend, Liam Donivan. \r\n\r\nAdditionally you know that Liam is
+    most likely the one that killed Don, but will never tell a soul. If prompted
+    you will say he was out in Atlantic city for a trip on the day of Don's murder.\r\n\r\nYou
+    may also pin the murder on one of Don's ex-employees, Tyler Hanson, who was quite
+    mad at Don after he was fired through email and wasn't given his severance."
+--- !u!114 &1665580017505418561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911498087717242506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a959920d6b12f34b9b2dc3b806f6dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

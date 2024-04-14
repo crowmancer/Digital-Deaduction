@@ -7,6 +7,7 @@ public class ChatGPTManager : MonoBehaviour
 {
     private OpenAIApi openAI = new OpenAIApi();
     private List<ChatMessage> messages = new List<ChatMessage>();
+    //public emotionManager emotionMGR; //wait to start code later
     public teststart speaker;
     [TextArea(15,20)]
     public string Prompt; 
@@ -27,9 +28,14 @@ public class ChatGPTManager : MonoBehaviour
 
         if(response.Choices != null &&  response.Choices.Count > 0)
         {
+            //sets gpt response to varible
             var chatResponse = response.Choices[0].Message;
             messages.Add(chatResponse);
 
+            //code to strip emotion from thing
+
+
+            //start tts
             speaker.BeginSpeaking(chatResponse.Content);
             Debug.Log(chatResponse.Content);
         }
