@@ -46,6 +46,8 @@ public class SpeechRecognitionTest : MonoBehaviour
                 gpt = gpt4;
                 break;
         }
+        Debug.Log(num);
+        gpt.gameObject.SetActive(true);
     }
     public void SetActive(bool val) 
     {
@@ -54,7 +56,7 @@ public class SpeechRecognitionTest : MonoBehaviour
 
     private void Update()
     {
-        if (activity = false) {StopRecording();}
+        if (activity == false) {StopRecording();}
         else
         {
             if (inputAction.action.triggered)
@@ -89,7 +91,7 @@ public class SpeechRecognitionTest : MonoBehaviour
     {
         text.color = Color.white;
         text.text = "Recording...";
-        clip = Microphone.Start(null, false, 10, 44100);
+        clip = Microphone.Start(null, false, 30, 44100);
         recording = true;
     }
 
