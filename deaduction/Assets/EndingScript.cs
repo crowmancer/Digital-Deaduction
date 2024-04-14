@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndingScript : MonoBehaviour
 {
-
+    
     public int choice;
     public GameObject Vinny;
     public GameObject Emma;
@@ -21,6 +21,7 @@ public class EndingScript : MonoBehaviour
         LiamJail.SetActive(false);
         Win.SetActive(false);
         Loose.SetActive(false);
+        choice = PlayerPrefs.GetInt("charnumber");
         if (choice == 0)
         {
             Vinny.SetActive(true);
@@ -29,7 +30,7 @@ public class EndingScript : MonoBehaviour
         else if (choice == 1)
         {
             Emma.SetActive(true);
-            Loose.SetActive(false);
+            Loose.SetActive(true);
         }
         else if(choice == 2) {
             Tyler.SetActive(true);

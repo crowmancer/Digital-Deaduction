@@ -2089,13 +2089,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 536264700}
+  - component: {fileID: 536264701}
   m_Layer: 5
   m_Name: finalselection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &536264700
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2121,6 +2122,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &536264701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536264699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9aeffd5eed157b4a99e15efa0f5e55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &539675174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2424,7 +2437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40e181ef7f384f5e895d4dc3eee0702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voice: "Henry\r"
+  voice: Henry
   dialogue: something aint right pardner
 --- !u!65 &554083125
 BoxCollider:
@@ -2654,7 +2667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40e181ef7f384f5e895d4dc3eee0702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voice: "Dalton\r"
+  voice: Dalton
   dialogue: something aint right pardner
 --- !u!65 &571795685
 BoxCollider:
@@ -2993,7 +3006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40e181ef7f384f5e895d4dc3eee0702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voice: "Kathrine\r"
+  voice: Kathrine
   dialogue: something aint right pardner
 --- !u!65 &618748166
 BoxCollider:
@@ -4123,10 +4136,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539675185}
-        m_TargetAssemblyTypeName: bellRing, Assembly-CSharp
-        m_MethodName: debugSpellout
-        m_Mode: 5
+      - m_Target: {fileID: 536264701}
+        m_TargetAssemblyTypeName: finscreen, Assembly-CSharp
+        m_MethodName: win
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4436,7 +4449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40e181ef7f384f5e895d4dc3eee0702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voice: "Curtis\r"
+  voice: Curtis
   dialogue: something aint right pardner
 --- !u!82 &832188259
 AudioSource:
@@ -8032,14 +8045,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539675185}
-        m_TargetAssemblyTypeName: bellRing, Assembly-CSharp
-        m_MethodName: debugSpellout
-        m_Mode: 5
+      - m_Target: {fileID: 536264701}
+        m_TargetAssemblyTypeName: finscreen, Assembly-CSharp
+        m_MethodName: win
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Emma
           m_BoolArgument: 0
@@ -8228,7 +8241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1724850161
 Transform:
   m_ObjectHideFlags: 0
@@ -8749,14 +8762,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539675185}
-        m_TargetAssemblyTypeName: bellRing, Assembly-CSharp
-        m_MethodName: debugSpellout
-        m_Mode: 5
+      - m_Target: {fileID: 536264701}
+        m_TargetAssemblyTypeName: finscreen, Assembly-CSharp
+        m_MethodName: win
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: tyler
           m_BoolArgument: 0
@@ -10171,14 +10184,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539675185}
-        m_TargetAssemblyTypeName: bellRing, Assembly-CSharp
-        m_MethodName: debugSpellout
-        m_Mode: 5
+      - m_Target: {fileID: 536264701}
+        m_TargetAssemblyTypeName: finscreen, Assembly-CSharp
+        m_MethodName: win
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: liam
           m_BoolArgument: 0
