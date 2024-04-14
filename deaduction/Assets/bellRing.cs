@@ -11,6 +11,7 @@ public class bellRing : MonoBehaviour
     public SpeechRecognitionTest speechR;
     public GameObject gptCube;
     bool delay = false;
+    public fifthround fifthround;
 
     void OnTriggerEnter(Collider other)
     {
@@ -54,8 +55,7 @@ public class bellRing : MonoBehaviour
     public void iterateChar()
     {
         if(characterNum + 1 >= 5){
-            return;
-            //do special thing at 5
+            fifthround.startfifth();
         }
         else
         {
