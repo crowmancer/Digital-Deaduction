@@ -8,13 +8,15 @@ public class ChatGPTManager : MonoBehaviour
     private OpenAIApi openAI = new OpenAIApi();
     private List<ChatMessage> messages = new List<ChatMessage>();
     public teststart speaker;
-
+    [TextArea(15,20)]
+    public string Prompt; 
+    
     public async void AskChatGPT(string newText)
     {
+        
         ChatMessage newMessage = new ChatMessage();
         newMessage.Content = newText;
         newMessage.Role = "user";
-
         messages.Add(newMessage);
 
         CreateChatCompletionRequest request = new CreateChatCompletionRequest();
@@ -37,7 +39,10 @@ public class ChatGPTManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ChatMessage newMessage = new ChatMessage();
+        newMessage.Content = Prompt;
+        newMessage.Role = "user";
+        messages.Add(newMessage);
     }
 
     // Update is called once per frame
