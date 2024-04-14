@@ -29,7 +29,7 @@ public class SpeechRecognitionTest : MonoBehaviour
         
     }
 
-    public SetGPT(int num)
+    public void SetGPT(int num)
     {
         switch(num) 
         {
