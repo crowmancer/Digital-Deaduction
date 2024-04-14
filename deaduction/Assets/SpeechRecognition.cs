@@ -3,6 +3,8 @@ using HuggingFace.API;
 using TMPro;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class SpeechRecognitionTest : MonoBehaviour
 {
@@ -11,26 +13,37 @@ public class SpeechRecognitionTest : MonoBehaviour
     private AudioClip clip;
     private byte[] bytes;
     private bool recording;
-
+    private bool xDown;
     // OpenXR Input Actions
-    private InputDevice device;
-    private bool xButtonPressed;
+    public InputHelpers.Button button;
+    public InputActionReference inputAction;
 
     private void Start()
     {
-        // Find the right hand controller
-        device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+        
     }
+
+    
 
     private void Update()
     {
-        device.TryGetFeatureValue(CommonUsages.primaryButton, out xButtonPressed);
+        if (inputAction.action.triggered)
+        {
+            if (!xDown) {
+                xDown=true;
+                
+            }
+            else {
+                xDown=false;
+                Debug.Log("not gripping");
+            }
+        }
 
-        if (xButtonPressed && !recording)
+        if (xDown && !recording)
         {
             StartRecording();
         }
-        else if (!xButtonPressed && recording)
+        else if (!xDown && recording)
         {
             StopRecording();
         }
@@ -102,4 +115,5 @@ public class SpeechRecognitionTest : MonoBehaviour
             return memoryStream.ToArray();
         }
     }
+    
 }
