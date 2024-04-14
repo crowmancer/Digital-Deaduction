@@ -17,4 +17,9 @@ public class bellRing : MonoBehaviour
         Debug.Log("this thing goes gong but trigger");
         bell.Play();
     }
+
+    public void debugSpellout(string spellout)
+    {
+        Debug.Log(spellout);
+    }
 }
