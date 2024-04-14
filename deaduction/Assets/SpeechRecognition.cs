@@ -14,43 +14,74 @@ public class SpeechRecognitionTest : MonoBehaviour
     private byte[] bytes;
     private bool recording;
     private bool xDown;
+    private bool activity = true;
     // OpenXR Input Actions
     public InputActionReference inputAction;
     public ChatGPTManager gpt;
-    public clipTester tester;
 
+    public ChatGPTManager gpt1;
+    public ChatGPTManager gpt2;
+    public ChatGPTManager gpt3;
+    public ChatGPTManager gpt4;
+    
     private void Start()
     {
         
     }
 
-    
+    public void SetGPT(int num)
+    {
+        switch(num) 
+        {
+            case 1:
+                gpt = gpt1;
+                break;
+            case 2:
+                gpt = gpt2;
+                break;
+            case 3:
+                gpt = gpt3;
+                break;
+            case 4:
+                gpt = gpt4;
+                break;
+        }
+    }
+    public void SetActive(bool val) 
+    {
+        activity = val;
+    }
 
     private void Update()
     {
-        if (inputAction.action.triggered)
+        if (activity = false) {StopRecording();}
+        else
         {
-            if (!xDown) {
-                xDown=true;
-            }
-            else {
-                xDown=false;
-            }
-            if (xDown && !recording)
+            if (inputAction.action.triggered)
             {
-                StartRecording();
-            }
-            else if (!xDown && recording)
-            {
-                StopRecording();
-            }
+                if (!xDown) {
+                    xDown=true;
+                }
+                else {
+                    xDown=false;
+                }
+                if (xDown && !recording)
+                {
+                    StartRecording();
+                }
+                else if (!xDown && recording)
+                {
+                    StopRecording();
+                }
 
-            if (recording && Microphone.GetPosition(null) >= clip.samples)
-            {
-                StopRecording();
+                if (recording && Microphone.GetPosition(null) >= clip.samples)
+                {
+                    StopRecording();
+                }
             }
         }
-
+        
+        
         
     }
 
@@ -70,7 +101,6 @@ public class SpeechRecognitionTest : MonoBehaviour
         clip.GetData(samples, 0);
         bytes = EncodeAsWAV(samples, clip.frequency, clip.channels);
         recording = false;
-        tester.clipTest(clip);
         SendRecording();
     }
 
