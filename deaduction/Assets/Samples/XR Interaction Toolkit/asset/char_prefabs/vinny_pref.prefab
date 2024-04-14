@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3421269007574682960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.601
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.49
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      propertyPath: m_Name
+      value: vinny_pref
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7703617164231392727}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6575099708572468169}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2744047352875428542}
+  m_SourcePrefab: {fileID: 100100000, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+--- !u!1 &2574831763327545345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d161f5e6770cdf44490f24e17af4ec2f, type: 3}
+  m_PrefabInstance: {fileID: 3421269007574682960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7703617164231392727
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574831763327545345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d4141ddf04916324aa46c2e61759724f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6575099708572468169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574831763327545345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d41143ae0ee47488bd2b03b3d9d750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speaker: {fileID: 0}
+  Prompt: "at the beginning of every message you will put an emotion from the following
+    list:\r\nnervous, neutral, angry, sad\r\n\r\nyou may speak now\r\n\r\nYou are
+    taking on the role of a sleezy car dealer named Vinny Rossi. You have a New Jersey
+    accent. \r\nYou are suspected of the murder of your business rival Don Horatio.
+    Because of Don Horatio's death your car dealership is making increased profits.\r\nYou
+    met with one of Don's ex-employees the day before Don was murdered. Also on the
+    day before Don was murdered, one of your dealership's cars was stolen. \r\n\r\nthe
+    worse mood you are in the less likely you will be willing to give up information.\r\nevidence
+    you can give up:\r\nDon's wife seemed rather flirty with another man.\r\nThe
+    ex-employee you met seemed kinda upset with Don.\r\n\r\nyou will not give information
+    willingly unless you think its truely nessessary or you're caught in a lie."
+--- !u!114 &2744047352875428542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574831763327545345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a959920d6b12f34b9b2dc3b806f6dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
